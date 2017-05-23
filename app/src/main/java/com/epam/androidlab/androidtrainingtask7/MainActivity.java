@@ -12,8 +12,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        View downloadButton = findViewById(R.id.startServiceButton);
-        downloadButton.setOnClickListener(event ->
+        View startServiceButton = findViewById(R.id.startServiceButton);
+        startServiceButton.setOnClickListener(event ->
                 startService(new Intent(this, MyService.class)));
     }
 }
